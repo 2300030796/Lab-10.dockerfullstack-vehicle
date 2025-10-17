@@ -1,0 +1,5 @@
+package com.cicd.veh.controller;
+
+public class VehicleController {
+
+}

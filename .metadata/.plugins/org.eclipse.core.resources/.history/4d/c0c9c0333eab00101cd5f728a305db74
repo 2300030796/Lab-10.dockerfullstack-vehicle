@@ -1,0 +1,5 @@
+package com.cicd.veh.repository;
+
+public interface VehicleRepository {
+
+}
