@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./style.css";
-import config from "./config.js";
+
 
 const VehicleManager = () => {
   const [vehicles, setVehicles] = useState([]);
@@ -20,8 +20,8 @@ const VehicleManager = () => {
   const [message, setMessage] = useState("");
   const [editMode, setEditMode] = useState(false);
 
-  const baseUrl = `${config.url}`; 
-//   const baseUrl = `${config.url}/vehicleapi`; 
+ const baseUrl = `${import.meta.env.VITE_API_URL}/vehicleapi`;
+
 
   useEffect(() => {
     fetchAllVehicles();
